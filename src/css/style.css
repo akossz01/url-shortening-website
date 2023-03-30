@@ -13,6 +13,8 @@ body{
     padding: 0;
     position: relative;
     width: 100%;
+
+    overflow-x: hidden;
 }
 
 .mobile-break{
@@ -210,6 +212,8 @@ body{
     height: 260px;
 
     z-index: 20;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .card img{
@@ -555,6 +559,11 @@ body{
 
     .cards{
         margin-top: -50px;
+    }
+
+    .card:hover{
+        transform: translateY(-20px);
+        transition: all 0.3s ease-in-out;
     }
 
     .line{
