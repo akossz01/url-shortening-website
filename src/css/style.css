@@ -530,6 +530,7 @@ body{
         background-image: url(../../images/bg-boost-desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        animation: 5s ease-in-out 0s infinite backgroundSlide;
     }
 
     .footer{
@@ -568,6 +569,7 @@ body{
 
     .card:hover{
         transform: translateY(-20px);
+        box-shadow: 3px 3px 15px -5px #bababa;
         transition: all 0.3s ease-in-out;
     }
 
@@ -610,7 +612,7 @@ body{
     /* Generated Cards */
     .generated-item{
         flex-direction: row;
-        width: 690px;
+        width: 710px;
         max-width: 985px;
     }
     
@@ -730,4 +732,16 @@ body{
 	100% {
 		transform: translateY(0%);
 	}	
+}
+
+@keyframes backgroundSlide {
+    0% {
+        background-position-x: 0px;
+    }
+    50% {
+        background-position-x: 50px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
 }
