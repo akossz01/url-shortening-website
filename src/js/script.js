@@ -60,10 +60,11 @@ function createCard(link, shortLink){
         button.textContent = 'Copied!';
         button.style.background = '#676767';
 
+        /* Change back button after ... seconds */
         setTimeout(() => {
             button.textContent = 'Copy';
             button.style.background = '#2bd0d0';
-        }, '2000');
+        }, '2500');
     });
 
     card.appendChild(originalLink);
